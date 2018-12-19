@@ -77,6 +77,11 @@ canvas.addEventListener( 'mousemove', function ( evt )
 {
 	var mousePos = getMousePos( evt );
 	var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+	if(mouseDrag){
+		draw();
+		context.fillStyle = foregroundcolor;
+		context.fillRect( startpos.x, startpos.y, mousePos.x - startpos.x, mousePos.y - startpos.y );
+	}
 }, false );
 
 function getMousePos( evt )

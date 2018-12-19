@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>JSdraw</title>
+     <link rel="stylesheet" type="text/css" href="css/spectrum.css">
+     <link rel="stylesheet" type="text/css" href="css/jsdraw.css">
+</head>
+<body>
+    <div id="toolbar">
+        Foregroundcolor: <input type='text' id="foreground"/>
+        Backgroundcolor: <input type='text' id="background"/>
+        <!--Backgroundcolor: <input onchange="UpdateBackground(this);" class="jscolor" value="FFFFFF">
+        Foregroundcolor: <input onchange="UpdateForeground(this);" class="jscolor" value="000000"-->
+        <button onclick="SaveImage();">Save as PNG</button>
+        <button onclick="Clear();">Clear</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <a id="link"></a>
+
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/spectrum.js"></script>
+    <script type="text/javascript" src="js/jsdraw.js"></script>
+</body>
+</html>
